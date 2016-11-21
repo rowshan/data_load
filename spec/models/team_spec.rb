@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Manager, type: :model do
+RSpec.describe Team, type: :model do
   describe 'factory' do
     it 'exists' do
       expect { FactoryGirl.create :user }.not_to raise_error
@@ -10,6 +10,6 @@ RSpec.describe Manager, type: :model do
       expect(build :user).to be_valid
     end
 
-
   end
+
 end
